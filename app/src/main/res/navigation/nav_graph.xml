@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="summerpractice.hometask.hometask_2.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/home_fragment">
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_films"
+        android:name="summerpractice.hometask.hometask_2.FilmsFragment"
+        android:label="Films"
+        tools:layout="@layout/films_fragment" />
+
+    <fragment
+        android:id="@+id/nav_series"
+        android:name="summerpractice.hometask.hometask_2.SeriesFragment"
+        android:label="Series"
+        tools:layout="@layout/series_fragment" />
+
+    <fragment
+        android:id="@+id/nav_books"
+        android:name="summerpractice.hometask.hometask_2.BooksFragment"
+        android:label="Books"
+        tools:layout="@layout/books_fragment" />
+
+    <fragment
+        android:id="@+id/nav_account"
+        android:name="summerpractice.hometask.hometask_2.AccountFragment"
+        android:label="Account"
+        tools:layout="@layout/account_fragment" />
+        <action
+            android:id="@+id/action_nav_account_to_nav_profile"
+            app:destination="@id/nav_profile"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/slide_out"
+            app:popEnterAnim="@anim/slide_in"
+            app:popExitAnim="@anim/slide_out" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="summerpractice.hometask.hometask_2.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/profile_fragment" >
+        <argument
+            android:name="inputText"
+            app:argType="string" />
+    </fragment>
+
+</navigation>
