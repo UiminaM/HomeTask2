@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "HomeTask_2"
+rootProject.name = "HomeTask2"
 include(":app")
  
